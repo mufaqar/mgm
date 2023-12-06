@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'axiformaBold';
+  src: url('../../public/fonts/axiformaBold.ttf');
+}
+@font-face {
+  font-family: 'axiformaRegular';
+  src: url('../../public/fonts/axiformaRegular.ttf');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,4 +23,16 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+body {
+  font-family: 'axiformaBold';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'axiformaRegular';
 }

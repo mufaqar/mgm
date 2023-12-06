@@ -6,7 +6,7 @@ import { FaEnvelope, FaInstagram, FaLinkedinIn, FaLocationDot, FaTwitter, FaYout
 
 function Footer() {
   return (
-    <footer className='pt-16 bg-[url("/images/team-shap.png")] bg-cover bg-center mix-blend-overlay bg-[#22282F]'>
+    <footer className='pt-16 bg-[url("/images/team-shap.png")] bg-cover bg-center mix-blend-overlay bg-[#22282F]' id='contact'>
       <div className='container mx-auto px-4 grid md:grid-cols-4 gap-7'>
         <div>
           <Link href="/" className='inline-block'>

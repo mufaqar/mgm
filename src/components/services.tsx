@@ -3,7 +3,7 @@ import React from 'react'
 
 function Services() {
   return (
-    <section className='bg-blue-50/40 py-16'>
+    <section className='bg-blue-50/40 py-16' id='services'>
       <div className='container mx-auto px-4'>
         <h2 className='md:text-7xl text-3xl font-bold text-center'>
           Islamic Center Services
