@@ -4,7 +4,7 @@ import { HiOutlineClock } from "react-icons/hi2";
 import { FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link';
 
-function Schedule() {
+function Schedule({prayerTimings}:any) {
     return (
         <section className='py-16'>
             <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-10'>
@@ -16,14 +16,15 @@ function Schedule() {
                                 Prayer times in Malta
                             </h4>
                             <h4 className='md:text-4xl text-xl font-semibold text-white md:my-4'>
-                                Wednesday, November 22.2023
+                            
+                            {prayerTimings?.date?.hijri?.gregorian?.weekday?.en}  {prayerTimings?.date?.readable}
                             </h4>
                             <p className='flex items-center justify-between max-w-[300px]'>
                                 <span className='md:text-2xl text-lg font-medium text-white'>
                                     Sun Rise
                                 </span>
                                 <span className='md:text-4xl text-xl font-medium text-white'>
-                                    18:07 <span className='text-xl'>AM</span>
+                                {prayerTimings?.timings?.Sunrise} <span className='text-xl'>AM</span>
                                 </span>
                             </p>
                         </div>
@@ -32,86 +33,79 @@ function Schedule() {
                         <h5 className='md:text-xl text-lg font-medium text-[#36AE7C] w-1/3'>
                             Salah
                         </h5>
-                        <h5 className='md:text-xl text-lg font-medium text-[#36AE7C] w-1/3 text-center'>
-                            Begins
-                        </h5>
+                       
                         <h5 className='md:text-xl text-lg font-medium text-[#36AE7C] w-1/3 text-end'>
                             Iqaamah
                         </h5>
                     </div>
                     <div className='grid gap-3'>
+
+                   
+                       
+
+
                         <div className='flex justify-between p-4 border border-[#8AC048] shadow-[0px_0px_3px_0px_rgb(0,0,0,32%)] rounded-md'>
                             <h5 className='md:text-xl text-lg font-medium flex items-center gap-2  w-1/3'>
                                 <HiOutlineClock className="text-[#36AE7C] text-2xl" />   Fajr
                             </h5>
-                            <h5 className='md:text-xl text-lg font-medium w-1/3 text-center'>
-                                4:35 AM
-                            </h5>
+                            
                             <h5 className='md:text-xl text-lg font-medium w-1/3 text-end'>
-                                4:35 AM
+                            {prayerTimings?.timings?.Fajr}
                             </h5>
                         </div>
                         <div className='flex justify-between p-4 border border-[#8AC048] shadow-[0px_0px_3px_0px_rgb(0,0,0,32%)] rounded-md'>
                             <h5 className='md:text-xl text-lg font-medium flex items-center gap-2  w-1/3'>
                                 <HiOutlineClock className="text-[#36AE7C] text-2xl" />   Dhuhr
                             </h5>
-                            <h5 className='md:text-xl text-lg font-medium w-1/3 text-center'>
-                                1:00 PM
-                            </h5>
+                         
                             <h5 className='md:text-xl text-lg font-medium w-1/3 text-end'>
-                                1:00 PM
+                            {prayerTimings?.timings?.Dhuhr}
                             </h5>
                         </div>
                         <div className='flex justify-between p-4 border border-[#8AC048] shadow-[0px_0px_3px_0px_rgb(0,0,0,32%)] rounded-md'>
                             <h5 className='md:text-xl text-lg font-medium flex items-center gap-2  w-1/3'>
                                 <HiOutlineClock className="text-[#36AE7C] text-2xl" />   Asr
                             </h5>
-                            <h5 className='md:text-xl text-lg font-medium w-1/3 text-center'>
-                                4:00 PM
-                            </h5>
+                           
                             <h5 className='md:text-xl text-lg font-medium w-1/3 text-end'>
-                                4:00 PM
+                            {prayerTimings?.timings?.Asr}
                             </h5>
                         </div>
                         <div className='flex justify-between p-4 border border-[#8AC048] shadow-[0px_0px_3px_0px_rgb(0,0,0,32%)] rounded-md'>
                             <h5 className='md:text-xl text-lg font-medium flex items-center gap-2  w-1/3'>
                                 <HiOutlineClock className="text-[#36AE7C] text-2xl" />   Maghrib
                             </h5>
-                            <h5 className='md:text-xl text-lg font-medium w-1/3 text-center'>
-                                6:15 PM
-                            </h5>
+                           
                             <h5 className='md:text-xl text-lg font-medium w-1/3 text-end'>
-                                6:15 PM
+                            {prayerTimings?.timings?.Maghrib}
                             </h5>
                         </div>
                         <div className='flex justify-between p-4 border border-[#8AC048] shadow-[0px_0px_3px_0px_rgb(0,0,0,32%)] rounded-md'>
                             <h5 className='md:text-xl text-lg font-medium flex items-center gap-2  w-1/3'>
                                 <HiOutlineClock className="text-[#36AE7C] text-2xl" />   Isha
                             </h5>
-                            <h5 className='md:text-xl text-lg font-medium w-1/3 text-center'>
-                                8:00 PM
-                            </h5>
+                           
                             <h5 className='md:text-xl text-lg font-medium w-1/3 text-end'>
-                                8:00 PM
+                            {prayerTimings?.timings?.Isha}
                             </h5>
                         </div>
                         <div className='flex justify-between p-4 border border-[#8AC048] shadow-[0px_0px_3px_0px_rgb(0,0,0,32%)] rounded-md'>
                             <h5 className='md:text-xl text-lg font-medium flex items-center gap-2  w-1/3'>
-                                <HiOutlineClock className="text-[#36AE7C] text-2xl" />   Jummah
+                                <HiOutlineClock className="text-[#36AE7C] text-2xl" />   Imsak
                             </h5>
-                            <h5 className='md:text-xl text-lg font-medium w-1/3 text-center'>
-                                21:55 PM
-                            </h5>
+                           
                             <h5 className='md:text-xl text-lg font-medium w-1/3 text-end'>
-                                21:55 PM
+                            {prayerTimings?.timings?.Imsak}
                             </h5>
                         </div>
+
+
                         <div className='flex justify-between p-4 bg-[#8AC048] shadow-[0px_0px_3px_0px_rgb(0,0,0,32%)] rounded-md'>
                             <h5 className='md:text-xl text-lg font-medium flex items-center gap-2 text-center text-white w-1/3'>
                                 <HiOutlineClock className="text-[#36AE7C] text-2xl" />   Sunset
                             </h5>
                             <h5 className='md:text-xl text-lg font-medium text-white w-1/3 text-end'>
-                                4:35 AM
+                            {prayerTimings?.timings?.Sunset}
                             </h5>
                         </div>
                     </div>
@@ -124,11 +118,12 @@ function Schedule() {
                                 Islamic Date
                             </h4>
                             <h4 className='md:text-4xl text-xl font-semibold text-white md:my-4'>
-                                12 Jumada
+                            {prayerTimings?.date?.hijri?.date}
                             </h4>
                             <p className='flex items-center justify-between'>
                                 <span className='md:text-2xl text-lg font-medium text-white'>
-                                    Al-Awwal 1445
+                                   
+                                    {prayerTimings?.date?.hijri?.month.en}
                                 </span>
                             </p>
                         </div>
@@ -142,7 +137,7 @@ function Schedule() {
                         <p className='text-2xl font-medium text-center text-[#36AE7C]'>
                             Imam At Islamic Centre
                         </p>
-                        <Link href="#" className='md:text-3xl font-bold text-[#0A66C2] text-center flex items-center w-fit mx-auto'>
+                        <Link href="https://www.linkedin.com/in/mohammad-elsadi-85627712a/?originalSubdomain=mt" target='_blank' className='md:text-3xl font-bold text-[#0A66C2] text-center flex items-center w-fit mx-auto'>
                             Linked
                             <FaLinkedin />
                         </Link>
