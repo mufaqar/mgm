@@ -135,7 +135,7 @@ function Schedule() {
                     </div>
                     <div className='rounded-[20px] shadow-[0px_0px_15px_0px_rgb(0,0,0,32%)] mt-6 bg-white pb-10'>
                         <div className='bg-[#36AE7C] h-[124px] w-full rounded-tl-[20px] rounded-tr-[20px]'></div>
-                        <Image src="/images/imam-mohammed.png" alt="imam-mohammed" width={382} height={382} className='mx-auto -mt-24' />
+                        <Image src="/images/imam-mohammed.png" alt="imam-mohammed" width={382} height={382} className='mx-auto -mt-24 lg:w-auto w-[180px]' />
                         <h3 className='md:text-3xl text-xl font-semibold text-center mt-3'>
                             Imam Mohammed Elsadi
                         </h3>
