@@ -20,7 +20,7 @@ function Banner() {
                     <p className='text-2xl font-bold max-w-[615px] my-3'>
                         A Place of Worship and Guidance, Where You Embrace the Beauty of Islamic Teachings.
                     </p>
-                    <Link href="#contact" className='text-lg font-semibold text-white flex items-center gap-3 bg-[#34A777] rounded-[10px] rounded-br-[20px] px-9 py-3 w-fit'>
+                    <Link href="/contact-us" className='text-lg font-semibold text-white flex items-center gap-3 bg-[#34A777] rounded-[10px] rounded-br-[20px] px-9 py-3 w-fit'>
                         Consult now <FaArrowRight />
                     </Link>
                 </div>

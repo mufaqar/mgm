@@ -68,7 +68,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#" className='text-base text-white'>
+              <Link href="/contact-us" className='text-base text-white'>
                 Donate Us
               </Link>
             </li>
@@ -168,14 +168,8 @@ function Footer() {
             Sirat 2024 ©, All rights reserved.
           </p>
           <ul className='flex flex-wrap gap-3 items-center md:justify-end justify-center'>
-            <li>
-              <Link href="#" className='md:text-base text-sm text-white'>
-                Sitemap
-              </Link>
-            </li>
-            <li className='md:text-base text-sm text-white'>
-              -
-            </li>
+            
+            
             <li>
               <Link href="#" className='md:text-base text-sm text-white'>
                 Terms & Conditions

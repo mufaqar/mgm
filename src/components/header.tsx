@@ -29,7 +29,7 @@ function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#contact" className='text-lg font-semibold text-white flex items-center gap-3 bg-[#34A777] rounded-[10px] rounded-br-[20px] px-9 py-3'>
+                            <Link href="/contact-us" className='text-lg font-semibold text-white flex items-center gap-3 bg-[#34A777] rounded-[10px] rounded-br-[20px] px-9 py-3'>
                                 Contact <FaArrowRight />
                             </Link>
                         </li>
