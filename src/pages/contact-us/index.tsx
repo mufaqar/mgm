@@ -39,7 +39,7 @@ function Contact_Us() {
     return (
         <>
 
-            <SeoMeta title="Contact Us | Top Providers" description="Get in touch with Top Providers about customer service, ISP listings, advertising opportunities and more." url="https://www.topproviders.net/contact-us" />
+            <SeoMeta title="Contact Us | Muslim Guide Malta" description="We’re here to help. Send a message and we’ll get you an answer soon." url="https://muslimsguidemalta.com/contact-us" />
 
             <div>
                 <PageBanner title="Contact Us" />

@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <main>
-      <SeoMeta title="Malta Islamic Center | Muslim Guide Malta" description="A Place of Worship and Guidance, Where You Embrace the Beauty of Islamic Teachings." url="https://muslimsguidemalta.com/" />
+      <SeoMeta title="Malta Islamic Center | Muslim Guide Malta" description="A Place of Worship and Guidance, Where You Embrace the Beauty of Islamic Teachings." url="https://muslimsguidemalta.com" />
       <Banner />
       <Schedule prayerTimings={prayerTimings} />
       <Services />
